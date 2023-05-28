@@ -18,7 +18,13 @@ lex [OPTIONS] [FILE]...
 ### Compiling Lex Output
 
 ```bash
-gcc lex.yy.c -o <output>
+gcc lex.yy.c -o <output> -lfl
+```
+
+### Usage of Lex Output
+
+```bash
+./<output> < [INPUT FILE] > [OUTPUT FILE]
 ```
 
 ## Yacc
