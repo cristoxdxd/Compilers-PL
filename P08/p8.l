@@ -3,9 +3,9 @@
     int ContadorTokens = 0;
 %}
 %%
-[a-zA-Z][a-zA-Z0-9]*    { printf( IDENTIFICADOR ++ContadorTokens, yytext); }
-[0123456789]+           { printf( NUMERO ++ContadorTokens, yytext); }
-[a-zA-Z]+               { printf( PALABRA ++ContadorTokens, yytext); }
+[a-zA-Z][a-zA-Z0-9]*    { printf("%d IDENTIFICADOR \"%s\"\n", ++ContadorTokens, yytext); }
+[a-zA-Z]+               { printf("%d PALABRA \"%s\"\n", ++ContadorTokens, yytext); }
+[0123456789]+           { printf("%d NUMERO \"%s\"\n", ++ContadorTokens, yytext); }
 %%
 int main(){
     yylex();

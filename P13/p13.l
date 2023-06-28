@@ -9,8 +9,8 @@ ella    {num_ella++; REJECT;}
 %%
 int main(){
     yylex();
-    printf( "Numero de el independientes %d\n"
-            "Numero de el en ellas %d\n"
+    printf( "Numero de el independientes %d\n",
+            "Numero de el en ellas %d\n",
             num_el, num_ella);
     return 0;
 }

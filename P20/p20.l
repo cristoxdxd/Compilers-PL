@@ -1,14 +1,14 @@
 %{
-/*
+/***
 1. Solicitar la entrada de un numero par e impar
 2. Identificar caracteristica de entrada: par / impar
-3. vertftcar la correccton de Ia entrada y el resultado de ta tmpreston
-*/
-#include <stdio.h>
-#include <stdlib.h>
-*/
-int number_1;
-int number_2;
+3. Verificar la correccion de la entrada y el resultado de la impresion
+*/    
+    #include <stdio.h>
+    #include <stdlib.h>
+
+    int number_1;
+    int number_2;
 %}
 number_sequence [0-9]*
 %%

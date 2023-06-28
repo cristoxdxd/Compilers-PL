@@ -1,3 +1,5 @@
+DIGITO [0-9]
+ID [a-zA-Z][a-zA-Z0-9]
 %%
 
 {DIGITO}+   { printf( "Un entero: %s (%d)\n", yytext, atoi( yytext ) ); }
@@ -8,9 +10,10 @@ if|then|begin|end|procedure|function   { printf( "Una palabra clave: %s\n", yyte
 "{"[^}\n]*"}"   /* se come una linea de comentario */
 [ \t\n]+   /* se come espacios, tabuladores y saltos de linea */
 .   { printf( "Un caracter de error: %s\n", yytext ); }
+
 %%
 
-main( argc, argv )
+int main( argc, argv )
 int argc;
 char **argv;
 {
